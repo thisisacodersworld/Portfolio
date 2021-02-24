@@ -1,0 +1,43 @@
+    body {
+        background: black;
+    }
+    
+    nav {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .content,  nav{
+        background: #000;
+    }
+
+    #projects img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .unstyled-links {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @media (min-width: 500px){
+        #home {
+            /* margin: 10rem .7rem; */
+            height: 50vh;
+            padding-top: 15vh;
+        }
+    }
+
+    /* .header {
+        background: -webkit-linear-gradient( rgba(34,193,195,1), rgba(253,45,45,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } */
+    /* h1 {
+        background: -webkit-linear-gradient(rgba(34,193,195,1), rgba(253,45,45,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    } */
+
