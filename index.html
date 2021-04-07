@@ -8,54 +8,63 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
+        <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">     
         <link rel="stylesheet" href="css/homepage.css">
+
+        <script src="https://kit.fontawesome.com/f31002dd48.js" crossorigin="anonymous"></script>
     </head>
 
     <body id="home" data-bs-spy="scroll" data-bs-target=".navbar">
         <div class="container content">
             <!-- navigation bar -->
-              <nav class="navbar navbar-expand-lg navbar-dark sticky-top pb-sm-5 pb-md-3 pt-3">
-                <a class="navbar-brand" href="#home">Capstone</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <nav class="navbar navbar-expand-lg sticky-top one-edge-shadow pb-sm-5 pb-md-3 mb-md-5 pt-2">
+                <a class="navbar-brand fs-5 fw-bolder" href="#home">kejda celaj</a>
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item px-2">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#projects">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                        <li class="nav-item px-2">
+                            <div>
+                              <a class="nav-link" href="#footer">Contact</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Blog</a>
-                      </li>
                   </ul>
                 </div>
             </nav>
 
             <!-- introduction section -->
-            <section class=" text-white">
-                <div class="container py-5 mb-5 px-5"> 
-                  <h1 class="display-4"><span class="text-warning">Hello</span>, I'm a front-end developer <br/>based in New York City.</h1>
-                  <p class="fw-lighter pb-2">I am always open for freelance work.</p>
-                  <a class="unstyled-links bg-warning bg-gradient border-0 rounded text-white fw-bold px-2 py-2" href="#contact">Contact me</a>
+            <section class="introduction py-md-5">
+              <!-- mt-md-3 -->
+              <div class="row"> 
+                <div class="container col-sm-12 col-lg-8 py-5 mb-lg-5 px-5"> 
+                  <h1 class="display-4"><span class="text-warning">Hello</span>, I'm a front-end developer based in New York City.</h1>
+                  <p class="fw-lighter pb-3">I am currenty looking for a new job position.</p>
+                  <div class="shining-button py-1 px-1">
+                    <a class="hello text-white bg-warning border-0 rounded fw-bold px-2 py-5" href="mailto:kc.develop@outlook.com">Get in Touch</a>
+                    <div class="shine"></div>
+                  </div>
                 </div>
+                <div class="col-sm-1 col-lg-4">
+                  <img class="p-5" id="avatar" src="img/professional_pic2.jpeg"/>
+                </div>
+              </div>
+                
             </section>
 
             <!-- about section -->
-            <div class="container bg-light rounded pb-5" id="about">
-                <div class="row justify-content-md-center mx-5">
-                  <div class="col-lg-6 py-4">
-                    <img src="img/avatar.jpg" class="img-fluid" alt="My bitmoji"/>
-                  </div>
-                  <div class="col-lg-6 py-4">
-                    <p class="fs-1 fw-bolder">About me</p>
-                    <p class="">A skilled software engineer specializing in front-end development for web and mobile applications. 
+            <div class="about container pb-5" id="about">
+                <div class="justify-content-md-center mx-4">
+                  <div class=" py-4  text-md-left">
+                    <p class="fs-4 fw-bold text-md-center">About</p>
+                    <p>A skilled software engineer specializing in front-end development for web and mobile applications. 
                         Extensive experience in multiple coding languages including Javascript (ReactJS, Angular, ES5, and
                          custom frameworks), Python (Flask, Django), and Java (Android Native Programming, general), and the
                           extension of enterprise level APIs. Implemented innovative designs for UI/UX, developed and designed
@@ -64,131 +73,179 @@
                     </p>
                   </div>
                 </div>
-              </div>
 
-              <!-- skills display section -->
-            <div class="container text-white text-center">
-                <h2 class=" fw-bolder text-md-end mt-5 mb-3">Skills & Tools</h2>
-                <div class="row justify-content-between mb-5">
-                  <div class="col-md-2 border border-3 border-warning text-center py-3 my-1">
-                    HTML
-                  </div>
-                  <div class="col-md-2 border border-3 border-warning text-center py-3 my-1">
-                    CSS
-                  </div>
-                  <div class="col-md-2 border border-3 border-warning text-center py-2 my-1">
-                    SASS
-                  </div>
-                  <div class="col-md-2 border border-3 border-warning text-center py-2 my-1">
-                    BootStrap
-                  </div>
-                  <div class="col-md-2 border border-3 border-warning text-center py-2 my-1">
-                    JavaScript
-                  </div>
+
+                <!-- project display section -->
+            <div class="container  mt-5" id="projects">
+              <div class="row justify-content-between mx-4">
+                <div class="project shadow-lg rounded col-md-5 col-lg-3 mx-1 px-4 mb-5">
+                  <!-- <img src="img/dashboard.png" class="rounded" alt="Project screenshot"/> -->
+                  <a class="" target="blank" href="https://web-app-dashboard-graphics.s3.us-east-2.amazonaws.com/web_app_dashboard_v3.1/dashboard.html"><h3 class="my-3">Web App Dashboard</h3></a>
+                  <p class=" special-text">An interactive dashboard for a web application using advanced web techniques
+                     including SVG graphics and JavaScript programming. The project involves creating
+                      tables, charts, graphics and other user interface components in a manner that promotes
+                       interactivity and usability.</p>
+                  <button class="expand-button">
+                    <i class="fas fa-angle-double-down"></i>
+                </button>
+                </div>
+                <div class="project shadow-lg rounded col-md-5 col-lg-3 mx-1 px-4 mb-5">
+                  <!-- <img src="img/employee_directory.png" class="rounded" alt="Project screenshot"/> -->
+                  <a class="" target="blank" href="https://employee-directory-app.s3.us-east-2.amazonaws.com/employee_directory_v1/directory.html"><h3 class="my-3">Employee Directory</h3></a>
+                  <p class="special-text">Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web
+                     pages. Using JavaScript, I've created an employee directory by communicating with a third-party API (Application Programming Interface).</p>
+                     <button class="expand-button">
+                      <i class="fas fa-angle-double-down"></i>
+                  </button>
+                </div>
+                <div class="project shadow-lg rounded col-md-5 col-lg-3 mx-1 px-4 mb-5">
+                  <!-- <img src="img/gallery_mockup.png" class="rounded" alt="Project screenshot"/> -->
+                  <a class="" target="blank" href="https://interactive-photo-gallery.s3.us-east-2.amazonaws.com/interactive_photo_gallery_v5/photo_gallery_v5/index.html"><h3 class="my-3">Interactive Photo Gallery</h3></a>
+                  <p class="special-text">Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications.
+                     In this project I have used HTML, CSS and JavaScript to create an interactive, searchable gallery of photos.</p>
+                     <button class="expand-button">
+                      <i class="fas fa-angle-double-down"></i>
+                  </button>
+                </div>
+                <div class="project-sm shadow-lg rounded col-md-5 col-lg-3 mx-1 px-4 mb-5">
+                  <!-- <img src="img/lostHeart.png" class="rounded" alt="Project screenshot"/> -->
+                  <a class="" target="blank" href="https://game-show-app.s3.us-east-2.amazonaws.com/game_show_app_v1.2/index.html"><h3 class="my-3">Game Show</h3></a>
+                  <p>A browser version of “Wheel of Success”, a word guessing game. I've used Javascript to come up with a random phrase that players
+                     will try to guess by entering different letters into the program.</p>
+                </div>
+                <div class="project-sm shadow-lg rounded col-md-5 col-lg-3 mx-1 px-4 mb-5">
+                  <!-- <img src="img/desktop-form.png" class="rounded" alt="Project screenshot"/> -->
+                  <a class="" target="blank" href="https://online-registration-form-js.s3.us-east-2.amazonaws.com/signup_form/online_registration_v4/index.html"><h3 class="my-3">Online Registration Form</h3></a>
+                  <p>A  responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes.</p>
+                </div>
+                <div class="project-sm shadow-lg rounded col-md-5 col-lg-3 mx-1 px-4 mb-5">
+                  <!-- <img src="img/avatar.png" class="rounded" alt="Project screenshot"/> -->
+                  <a class="" target="blank" href="https://style-guide-sass.s3.us-east-2.amazonaws.com/style_guide_v7/index.html"><h3 class="my-3">Style Guide</h3></a>
+                  <p>A style guide built using SASS that can act as your own personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and 
+                    development in general.</p>
                 </div>
               </div>
+        </div>
+              </div>
 
-            <!-- project display section -->
-            <div class="container text-white py-5" id="projects">
-                  <div class="row justify-content-between">
-                    <div class="col-md-5 col-lg-4 mb-5">
-                      <img src="img/dashboard.png" class="rounded" alt="Project screenshot"/>
-                      <a class="unstyled-links" target="blank" href="https://web-app-dashboard-graphics.s3.us-east-2.amazonaws.com/web_app_dashboard_v3.1/dashboard.html"><h3 class="my-3">Web App Dashboard</h3></a>
-                      <p>An interactive dashboard for a web application using advanced web techniques
-                         including SVG graphics and JavaScript programming. The project involves creating
-                          tables, charts, graphics and other user interface components in a manner that promotes
-                           interactivity and usability.</p>
-                    </div>
-                    <div class="col-md-5 col-lg-4 mb-5">
-                      <img src="img/desktop-form.png" class="rounded" alt="Project screenshot"/>
-                      <a class="unstyled-links" target="blank" href="https://online-registration-form-js.s3.us-east-2.amazonaws.com/signup_form/online_registration_v4/index.html"><h3 class="my-3">Online Registration Form</h3></a>
-                      <p>A  responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes.</p>
-                    </div>
-                    <div class="col-md-5 col-lg-4 mb-5">
-                      <img src="img/gallery_mockup.png" class="rounded" alt="Project screenshot"/>
-                      <a class="unstyled-links" target="blank" href="https://interactive-photo-gallery.s3.us-east-2.amazonaws.com/interactive_photo_gallery_v5/photo_gallery_v5/index.html"><h3 class="my-3">Interactive Photo Gallery</h3></a>
-                      <p>Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications.
-                         In this project I have used HTML, CSS and the popular programming language JavaScript to create an interactive, searchable gallery of photos.</p>
-                    </div>
-                    <div class="col-md-5 col-lg-4 mb-5">
-                      <img src="img/lostHeart.png" class="rounded" alt="Project screenshot"/>
-                      <a class="unstyled-links" target="blank" href="https://game-show-app.s3.us-east-2.amazonaws.com/game_show_app_v1.2/index.html"><h3 class="my-3">Game Show</h3></a>
-                      <p>A browser version of “Wheel of Success”, a word guessing game. I've used Javascript to come up with a random phrase that players
-                         will try to guess by entering different letters into the program.</p>
-                    </div>
-                    <div class="col-md-5 col-lg-4 mb-5">
-                      <img src="img/employee_directory.png" class="rounded" alt="Project screenshot"/>
-                      <a class="unstyled-links" target="blank" href="https://employee-directory-app.s3.us-east-2.amazonaws.com/employee_directory_v1/directory.html"><h3 class="my-3">Employee Directory</h3></a>
-                      <p>Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web
-                         pages. Using JavaScript, I've created an employee directory by communicating with a third-party API (Application Programming Interface).</p>
-                    </div>
-                    <div class="col-md-5 col-lg-4 mb-5">
-                      <img src="img/avatar.png" class="rounded" alt="Project screenshot"/>
-                      <a class="unstyled-links" target="blank" href="https://style-guide-sass.s3.us-east-2.amazonaws.com/style_guide_v7/index.html"><h3 class="my-3">Style Guide</h3></a>
-                      <p>A style guide built using SASS that can act as your own personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and 
-                        development in general.</p>
-                    </div>
-                  </div>
+            
+
+            <!-- skills display section -->
+            <div class="container text-center skills">
+              <h2 class=" fw-bold  mt-5 mb-5">Skills & Tools</h2>
+              <div class="row justify-content-between">
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-3 my-1">
+                  HTML
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-3 my-1">
+                  CSS
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  SASS
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  BootStrap
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  Less
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-3 my-1">
+                  JavaScript
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-3 my-1">
+                  jQuery
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  React
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  Redux
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  AngularJS
+                </div>
+              </div>
+              <div class="row justify-content-between mb-2">
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-3 my-1">
+                  REST
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-3 my-1">
+                  SQL
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  MongoDB
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  Java
+                </div>
+                <div class="skill col-md-2 border border-black shadow-lg rounded text-center py-2 my-1">
+                  Spring
+                </div>
+              </div>
             </div>
 
-            <hr class="bg-light"/>
-
             <!-- contact section -->
-            <section class="text-white my-3" id="contact">
+            <!-- <section class="my-3" id="contact">
                 <form>
-                  <h2 class="d-flex justify-content-center text-center fs-1 pt-5">Have questions? Need to hire me?</h2>
+                  <h2 class="d-flex justify-content-center text-center fs-1 pt-5">Have questions? Want to hire me?</h2>
                   <p class="d-flex justify-content-center fs-5 fw-lighter">Fill the form and I will contact you</p>
-                  <div class="row g-2 d-flex justify-content-center mt-4 w-100">
+                  
+                  <div class="row g-2 d-flex justify-content-center mt-4">
                       <div class="col-auto">
-                        <label for="name" class="col-form-label px-2">01</label>
+                        <label for="name" class="col-form-label">1.</label>
                       </div>
                       <div class="col-auto">
-                        <input type="text" id="name" class="form-control bg-dark border-top-0 border-start-0 border-end-0 border-white rounded-0 text-white" placeholder="Type your name..." required>
+                        <input type="text" id="name" class="form-control bg-dark border-top-0 border-start-0 border-end-0 border-white rounded-0 px-4 text-white" placeholder="Type your name..." required>
                       </div>
                       <div class="invalid-feedback">
                         Please provide a valid name.
                       </div>
                   </div>
+
                   <div class="row g-2 d-flex justify-content-center mt-2">
                       <div class="col-auto">
-                        <label for="email" class="col-form-label px-2">02</label>
+                        <label for="email" class="col-form-label">2.</label>
                       </div>
                       <div class="col-auto">
-                        <input type="email" id="email" class="form-control bg-dark border-top-0 border-start-0 border-end-0 border-white rounded-0 text-white" placeholder="Type your email..." required>
+                        <input type="email" id="email" class="form-control bg-dark border-top-0 border-start-0 border-end-0 border-white rounded-0 px-4 text-white" placeholder="Type your email..." required>
                       </div>
                   </div>
                   <div class="row g-2 d-flex justify-content-center mt-2">
                       <div class="col-auto">
-                        <label for="message" class="col-form-label px-2">03</label>
+                        <label for="message" class="col-form-label">3.</label>
                       </div>
                       <div class="col-auto">
-                        <input type="text" id="message" class="form-control bg-dark border-top-0 border-start-0 border-end-0 border-white rounded-0 text-white" placeholder="Type your message..." required>
+                        <input type="text" id="message" class="form-control bg-dark border-top-0 border-start-0 border-end-0 border-white rounded-0 px-4 text-white" placeholder="Type your message..." required>
                       </div>
                       <div class="invalid-feedback">
                         Please provide a message.
                       </div>
                   </div>
-                  <div class="d-flex justify-content-center mt-1 py-3">
-                    <button type="submit" value="submit" class="btn btn-default bg-warning bg-gradient border-0 rounded text-white my-2 px-4 py-2">Submit</button>
+                  <div class="d-flex justify-content-center mt-1 pt-3">
+                    <button type="submit" value="submit" class="btn btn-default bg-warning bg-gradient border-0 rounded text-white mt-2 ml-5 px-4 pt-2">Submit</button> -->
+                    <!-- <i class="fas fa-paper-plane"></i>
                   </div>
                 </form>
-            </section>
+            </section> -->
 
             <!-- footer section -->
-            <footer class="pt-5">
+            <footer class="pt-5" id="footer">
+              <hr class="bg-light"/>
                 <!-- social media links -->
-                <nav class="navbar navbar-dark mt-1 mb-3">
-                    <ul class="nav">
+                <nav class="navbar navbar-dark d-flex mt-1 mb-3">
+                    <ul class="nav justify-content-between">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="https://github.com/thisisacodersworld">Github</a>
+                            <a class="nav-link" href="https://github.com/thisisacodersworld">Github</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="https://www.linkedin.com/in/mytech-solutions/">LinkedIn</a>
+                            <a class="nav-link" href="https://www.linkedin.com/in/mytech-solutions/">LinkedIn</a>
                         </li>
                     </ul>
                     <ul class="nav justify-md-content-end">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="mailto:kc.develop@outlook.com">kc.develop@outlook.com</a>
+                            <a class="nav-link" href="mailto:kc.develop@outlook.com">kc.develop@outlook.com</a>
                         </li>
                       </ul>
                     </nav>
@@ -204,5 +261,16 @@
 
     <!-- js file script -->
         <script src="js/dashboard.js"></script>
+        <script>
+          $('.expand-button').on('click', function(){
+          $('.special-text').toggleClass('-expanded');
+          
+          if ($('.special-text').hasClass('-expanded')) {
+            $('.expand-button').html('<i class="fas fa-angle-double-up"></i>');
+          } else {
+            $('.expand-button').html('<i class="fas fa-angle-double-down"></i>');
+          }
+        });
+      </script>
     </body>
 </html>
